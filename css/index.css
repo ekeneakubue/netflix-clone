@@ -99,6 +99,7 @@ header{
     display: flex;
     align-items: center;
     width: 100%;
+    justify-content: center;
 }
 .search__bar input{
     padding: 1rem 1rem;
@@ -137,7 +138,7 @@ section{
 section .content{
     margin: 0px 1rem;
 }
-section .content .title{
+section > .content > .title{
     font-size: 40px;
     font-weight: 700;    
 }
@@ -150,7 +151,7 @@ section .content p{
 }
 .clip1__frame video{
     width: 384px;
-    /* height: -webkit-calc(50% - 18px); */
+    height: -webkit-calc(50% - 18px);
     height: calc(58% - 18px); 
     position: absolute;
     top: 83px;
@@ -160,13 +161,49 @@ section .content p{
 
 /* ---------------FAQ Styling------------------ */
 .faq{
-    width: 60%;
-    font-size: 25px;
+    padding: 2rem 0rem;
+    flex-direction: column;
+    width: 80%;
     justify-content: center;
+    margin: auto;
+    color: var(--white);
+    font-family: 'Rethink Sans', sans-serif;
 }
-/* .accordion{
-    
-} */
+.faq .title{
+    text-align: center;
+    width: 100%;
+    font-size: 25px;
+    margin-bottom: 2rem;
+}
+.accordion{
+    width: 50%;
+    background-color: var(--gray);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1.5rem;
+    margin: 1rem auto;
+}
+.accordion__search{   
+    text-align: center;
+    width: 55%;
+    margin: 4rem auto 1rem;
+}
+.accordion__search__bar{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.6rem 1rem;
+    width: 25%;
+    background-color: var(--red);
+    border: none;
+    color: var(--white);
+    font-size: 25px;
+}
+.accordion__search > .search__bar button{
+    height: 2.9rem;
+    font-size: 16px;
+} 
 
 /* ---------------Footer Styling------------------ */
 footer{
