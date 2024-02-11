@@ -126,7 +126,6 @@ header{
     margin: 2rem auto 3rem;
     padding: 0.5rem 4rem 3rem;
     border-radius: 10px;
-
     background-color: rgba(0, 0, 0, 0.811);
 }
 form input{
@@ -278,5 +277,11 @@ footer select option{
         font-size: 14px;
         font-weight: 800;
     }
-
+    .hero-content form{
+        width: 90%;
+        margin: 2rem auto 1rem;
+        padding: 0.5rem 4rem 3rem;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.811);
+    }
 }
