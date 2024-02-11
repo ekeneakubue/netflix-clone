@@ -284,4 +284,18 @@ footer select option{
         border-radius: 10px;
         background-color: rgba(0, 0, 0, 0.811);
     }
+
+    .footer__features{
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+
+    }
+    
+    .foot__item{
+        width: 100%;
+    }
+    .foot__col{
+        margin-bottom: 1rem;
+    }
 }
