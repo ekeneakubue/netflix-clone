@@ -12,9 +12,6 @@
     box-sizing: border-box;
     font-family: 'Rethink Sans', sans-serif;
 }
-a{
-    text-decoration: none;
-}
 body{
     padding: 0;
     margin: 0;
@@ -38,10 +35,10 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 6em;
+    padding: 2rem 6em 0.1rem;
 }
-.navbar img{
-    width: 15%;
+.navbar a img{
+    width: 80%;
 }
 .navs{
     display: flex;
@@ -59,7 +56,6 @@ header{
     padding: 0.5rem;
     border-radius:4px;
     font-weight: 800;
-    cursor: pointer;
 }
 .signin-btn{
     width: 90px;
@@ -73,29 +69,18 @@ header{
     border-radius:4px;
     border: none;
     font-weight: 800;
-    cursor: pointer;
 }
-.hero-section{
-    background-color: rgba(0, 0, 0, 0.5);
-    background-image: url(../images/index/carocel.png);
-    background-size: 1300px 650px;
+.hero-section{    
+    background-image: url(../images/signin/hero_bg.png);
+    background-size: 1300px 950px;
     background-repeat: no-repeat;
     background-position: center;
     align-items: center;
-    height: 100vh;
-}
-.hero-group{   
+    height: 131vh;
     color: var(--white);
-    display: flex;    
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    width: 100%;
-    height: 70vh;    
 }
 .hero-content{
-    width: 60%;
-    text-align: center;
+    width: 100%;
 }
 .hero-content h2{
     font-size: 64px;
@@ -111,10 +96,7 @@ header{
     display: flex;
     align-items: center;
     width: 100%;
-    justify-content: center;.nav__icons{
-        display: flex;
-        gap: 1rem;
-    }
+    justify-content: center;
 }
 .search__bar input{
     padding: 1rem 1rem;
@@ -131,7 +113,6 @@ header{
     border: none;
     color: var(--white);
     font-size: 25px;
-    cursor: pointer;
 }
 .search__bar button img{
     font-size: 20px;
@@ -139,102 +120,90 @@ header{
 }
 
 
-/* -------------------Sections Styles-------------------- */
-section{    
-    width: 100%;
-    color: var(--white);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 6em;
-    margin: auto;
-    gap: 5rem;
-    font-family: 'Rethink Sans', sans-serif; 
-}
-section .content{
-    margin: 0px 1rem;
-}
-section > .content > .title{
-    font-size: 40px;
-    font-weight: 700;    
-}
-section .content p{
-    font-size: 20px;
-}
-.clip1__frame{
-    position: relative;
-    z-index: 1;
-}
-.clip1__frame video{
-    width: 384px;
-    height: -webkit-calc(50% - 18px);
-    height: calc(58% - 18px); 
-    position: absolute;
-    top: 83px;
-    right: 10px;
-    left: 70px;    
-}
+/* ---------------form Styling-------------------- */
+.hero-content form{
+    width: 30%;
+    margin: 2rem auto 3rem;
+    padding: 0.5rem 4rem 3rem;
+    border-radius: 10px;
 
-/* ---------------FAQ Styling------------------ */
-.faq{
-    padding: 2rem 0rem;
-    flex-direction: column;
-    width: 80%;
-    justify-content: center;
-    margin: auto;
-    color: var(--white);
-    font-family: 'Rethink Sans', sans-serif;
+    background-color: rgba(0, 0, 0, 0.811);
 }
-.faq .title{
-    text-align: center;
+form input{
     width: 100%;
-    font-size: 25px;
-    margin-bottom: 2rem;
-}
-.accordion{
-    width: 50%;
     background-color: var(--gray);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.5rem 1.5rem;
-    margin: 1rem auto;
-}
-.accordion__search{   
-    text-align: center;
-    width: 55%;
-    margin: 4rem auto 1rem;
-}
-.accordion__search__bar{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 0.6rem 1rem;
-    width: 25%;
-    background-color: var(--red);
-    border: none;
     color: var(--white);
-    font-size: 25px;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 3px;
+    margin-bottom: 1rem;
 }
-.accordion__search > .search__bar button{
-    height: 2.9rem;
+form > a{
+    text-decoration: none;
+}
+form .button{
+    background-color: var(--red);
+    color: var(--white);
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    padding: 0.6rem 1rem;
+    margin-top: 1.5rem;
     font-size: 16px;
-} 
-
-
-
-
+    font-weight: 800;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+form .help{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0rem;
+    font-size: 14px;
+    color: var(--light-gray);
+}
+.conn{
+    color: var(--light-gray);
+}
+.conn > .fb{
+    margin: 2rem 0rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;    
+    font-size: 12px;
+    cursor: pointer;
+}
+.conn > span{
+    font-size: 16px;
+}
+.conn > span a{
+    color: var(--white);
+    text-decoration: none;
+}
+.conn > p{
+    font-size: 12px;
+}
+.conn > p > a{
+    text-decoration: none;
+    color: var(--blue);
+}
+.conn > p > a:hover{
+    text-decoration: underline;
+}
 /* ---------------Footer Styling------------------ */
 footer{    
-    padding: 2rem 10rem 3rem;
     color: var(--gray);
+    background-color: #000000d8;
+    padding: 2rem 7rem 1rem;
     font-family: 'Noto Sans KR', sans-serif;
 }
 .footer__features{
     display: flex;
     justify-content: space-between;
     line-height: 2rem;
-    padding: 1rem 0rem 2rem;
+    
+    width: 100%;
+    
 }
 footer a{
     text-decoration: none;
@@ -256,15 +225,20 @@ footer a:hover{
     padding: 0.5rem;
     border-radius:4px;
     font-weight: 800;
-    margin-bottom: 1rem;
+    margin: 2rem 0rem;
 }
 footer select option{
     background-color: none;
     justify-content: space-evenly;
 }
-  
 
-@media (max-width: 667px){
+
+
+
+
+
+
+@media(max-width: 667px){
     /* Header Media Querries */
     header{
         width: 100%;
@@ -305,75 +279,4 @@ footer select option{
         font-weight: 800;
     }
 
-
-
-    /* Main Media Querries */
-    main{        
-        padding: 0;
-        
-    }
-    section{  
-        width: 90%; 
-        padding: 1rem 1rem;
-        margin: auto;
-        gap: 0rem;
-        flex-direction: column;
-    }    
-    section > .content > .title{
-        font-size:25px;
-    }
-    section .content p{
-        font-size: 15px;
-    }
-    .clip1__frame img{
-        width: 90%;
-        display: flex;
-        margin: auto;
-    }
-    .clip1__frame video{
-        width: 300px;
-        height: 17vh;       
-        position: absolute;
-        top: 43px;        
-        left:2px;    
-    }
-    .accordion{
-        width: 90%;
-    }
-    .accordion__search{   
-        width: 90%;
-        margin: 3rem auto 1rem;
-        font-size: 12px;
-    }
-    .accordion__search{   
-        text-align: center;
-        width: 90%;
-        margin: 4rem auto 1rem;
-    }
-   
-    .accordion__search > .search__bar button{
-        height: 1.7rem;
-        font-size: 10px;
-    }
-
-    /* Footer media Styles */
-    footer{
-        display: flex;
-        flex-direction: column;
-        padding: 2rem 1rem 3rem;        
-    }
-    .footer__features{
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-        margin: auto;
-
-    }
-    
-    .foot__item{
-        width: 100%;
-    }
-    .foot__col{
-        margin-bottom: 1rem;
-    }
 }
